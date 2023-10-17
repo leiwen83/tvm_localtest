@@ -35,6 +35,9 @@ def has_cutlass():
     """Returns true if the CUTLASS custom codegen is available"""
     return tvm.get_global_func("relay.ext.cutlass.create_c_source_module", True) is not None
 
+def ddd():
+        print("AAA")
+        print
 
 def _get_cutlass_path():
     invalid_paths = []
